@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="Main">
+        <div class="Header">Tic Tac Toe Game</div><br>
+        <button class="Restart" id="Restart" onclick="Restart()">Restart</button>
+        <div class="Game-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="a1 unclaimed" id="a1" onclick="a1click()"></td>
+                        <td class="a2 unclaimed" id="a2" onclick="a2click()"></td>
+                        <td class="a3 unclaimed" id="a3" onclick="a3click()"></td>
+                    </tr>
+                    <tr>
+                        <td class="b1 unclaimed" id="b1" onclick="b1click()"></td>
+                        <td class="b2 unclaimed" id="b2" onclick="b2click()"></td>
+                        <td class="b3 unclaimed" id="b3" onclick="b3click()"></td>
+                    </tr>
+                    <tr>
+                        <td class="c1 unclaimed" id="c1" onclick="c1click()"></td>
+                        <td class="c2 unclaimed" id="c2" onclick="c2click()"></td>
+                        <td class="c3 unclaimed" id="c3" onclick="c3click()"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Notification" id="Notification"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

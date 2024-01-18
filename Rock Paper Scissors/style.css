@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.game-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241)
+}
+
+.current-score{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+.player1-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 80px;
+}
+
+.look{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 5px;
+}
+
+.player2-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+.current-player-notify{
+    position: absolute;
+    top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+table{
+    border-spacing: 5px 5px;
+    border-collapse: separate;
+}
+
+.player-buttons {
+    position: absolute;
+    bottom: 20px;
+}
+
+button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    border: solid #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button:hover{
+    border: solid #000000;
+    background-color: #333;
+    color: #fff;
+}
+
+.letter{
+    margin-left: 1.15vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 6vh;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: solid #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.clicked{
+    border: solid #000000;
+    background-color: #333;
+    color: #fff;
+}
+
+.output{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15%;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 550px;
+}
