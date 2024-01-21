@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="main">
+        <div class="lives" id="lives">Lives left: 5</div>
         <div class="header">Random Number Guessing Game</div>
         <div class="game-container">
-            <div class="choose">
+            <div class="chose">
                 <div class="title"></div>
-                <div class="fromto"><div class="textinfromto">From 0 to: </div><input type="number" class="inputfromto" id="to"><div class="look">|</div><div class="textinfromto"><button onclick="updatenumbers()">Enter</button></div></div>
+                <div class="fromto" id="fromtodiv"><div class="textinfromto">From 0 to: </div><input type="number" class="inputfromto" id="to"><div class="look">|</div><div class="textinfromto"><button onclick="updatenumbers()">Enter</button></div></div>
             </div>
-            <div class="output"></div>
+            <div class="output" id="output">LOADING...</div>
+            <div class="stats" id="stats"></div>
             <div class="user-input"><input type="text" class="input" id="player-input"><button class="submit" onclick="Submit()">Submit</button></div>
         </div>
     </div>
