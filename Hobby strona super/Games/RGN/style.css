@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
 
 body {
     display: flex;
@@ -8,6 +8,16 @@ body {
     overflow: hidden;
     font-family: "Poppins", sans-serif;
     background-color: #333;
+}
+
+.lives{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
 }
 
 .main{
@@ -37,12 +47,12 @@ body {
     text-align: center;
     margin: auto;
     width: 500px;
-    height: 500px;
+    height: 300px;
     border-radius: 20px;
     background-color: rgb(241, 241, 241)
 }
 
-.choose{
+.chose{
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
@@ -71,6 +81,21 @@ body {
     width: 50px;
     margin-left: 5px;
     margin-right: 10px;
+}
+
+.output{
+    font-size: 50px;
+}
+
+.user-input{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #333;
 }
 
 button{
