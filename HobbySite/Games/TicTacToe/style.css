@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #333;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+}
+
+body,
+div {
+    font-family: "Poppins", sans-serif;
+}
+
+.Game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: rgb(241, 241, 241)
+}
+
+table{
+    border-spacing: 0.25em 0.25em;
+    border-collapse: separate;
+}
+
+.a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    font-size: 80px;
+    font-weight: 500;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.unclaimed:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.Notification{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.Restart {
+    display: none;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #383838;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.Restart:hover {
+    background-color: #adadad;
+    color: #1f1f1f;
+}

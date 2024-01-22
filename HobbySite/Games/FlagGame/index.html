@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flag Guesser Game</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <div class="container">
+        <button class="settings" onclick="settings()">
+            <img src="Gear.png" alt="settings">
+        </button>  
+
+        <div class="animated-div" id="animatedDiv">
+            <p>Europe: <input type="checkbox" id="EuropeCheckbox" checked onclick="EuropeFilter()"></p>
+            <p>Asia: <input type="checkbox" id="AsiaCheckbox" checked onclick="AsiaFilter()"></p>
+            <p>Africa: <input type="checkbox" id="AfricaCheckbox" checked onclick="AfricaFilter()"></p>
+            <p>America: <input type="checkbox" id="AmericaCheckbox" checked onclick="AmericaFilter()"></p>
+            <p>Oceania: <input type="checkbox" id="OceaniaCheckbox" checked onclick="OceaniaFilter()"></p>
+            <p>Language: <button class="CurrentLanguage" onclick="ChangeLanguage()"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png" alt="Flag" class="IMGinSettings" id="languageFlag"></button></p>
+        </div>  
+
+        <p class="failp">Fails: <span id="failscore" class="failscore">0</span></p>
+
+        <h1 class="title">Flag Guesser Game</h1>
+        <div class="game-container">
+            <p class="instruction">Guess the country based on the flag:</p>
+            <img id="flagImage" src="" alt="Country Flag">
+            <br>
+            <label for="countryInput" class="label">Enter the name of the country:</label>
+            <input type="text" id="countryInput" class="input">
+            <button onclick="checkCountry()" class="button">Check</button>
+            <p id="result" class="result"></p>
+            <p>Points: <span id="points" class="points">0</span></p>
+        </div>
+        <div class="skip" id="skip" onclick="skip()">Skip</div>
+    </div>
+    
+    <!-- <div class="tester"></div> -->
+    <script src="Script.js" defer></script>
+</body>
+</html>
